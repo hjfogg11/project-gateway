@@ -68,10 +68,11 @@
             text-decoration: none;
             font-weight: bold;
             font-size: 0.9em;
+            transition: transform 0.3s ease;
         }
 
         .nav-bar a:hover {
-            text-decoration: underline;
+            transform: scale(1.1);
         }
 
         /* Sections */
@@ -161,8 +162,8 @@
 
     <div class="nav-bar">
         <a href="#home">Home</a>
-        <a href="#games">All Games</a>
-        <a href="#tools">All Tools</a>
+        <a href="./games">All Games</a>
+        <a href="./tools">All Tools</a>
     </div>
 
     <section id="games" class="section">
@@ -176,12 +177,12 @@
             <div class="box">
                 <h3>1v1.lol</h3>
                 <p>Basic shooter game for web browsers</p>
-                <a href="#">Play 1v1.lol</a>
+                <a href="./games/1v1lol">Play 1v1.lol</a>
             </div>
             <div class="box">
                 <h3>Slope</h3>
                 <p>Avoid obstacles</p>
-                <a href="#">Play Slope</a>
+                <a href="./games/slope">Play Slope</a>
             </div>
         </div>
     </section>
@@ -192,17 +193,17 @@
             <div class="box">
                 <h3>ExtHang3r</h3>
                 <p>Temporarily crash managed extensions</p>
-                <a href="#">Use ExtHang3r</a>
+                <a href="./tools/exthang3r">Use ExtHang3r</a>
             </div>
             <div class="box">
                 <h3>BlobeBlocker</h3>
                 <p>Allows you to go to blocked sites</p>
-                <a href="#">Use BlobeBlocker</a>
+                <a href="./tools/blobeblocker">Use BlobeBlocker</a>
             </div>
             <div class="box">
                 <h3>BlobeBM</h3>
                 <p>Run bookmarklets in about:blank</p>
-                <a href="#">Use BlobeBM</a>
+                <a href="./tools/blobebm">Use BlobeBM</a>
             </div>
         </div>
     </section>
