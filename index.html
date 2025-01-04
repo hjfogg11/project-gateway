@@ -7,47 +7,67 @@
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f9;
             color: #333;
+            line-height: 1.6;
         }
 
         /* Header */
         header {
-            background-color: #ff6b6b;
+            background: linear-gradient(135deg, #ff4e4e, #ff9a9a);
             color: white;
             text-align: center;
-            padding: 20px 0;
+            padding: 50px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
         }
 
         header h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 3.2em;
+            letter-spacing: 1px;
+            font-weight: bold;
+            animation: grow-title 1s ease-out forwards;
+        }
+
+        @keyframes grow-title {
+            0% {
+                transform: scale(0.9);
+                opacity: 0.8;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
         }
 
         header p {
-            margin: 5px 0 0;
-            font-size: 1.2em;
+            margin: 15px 0 0;
+            font-size: 1.3em;
+            opacity: 0.95;
         }
 
         /* Navigation bar */
         .nav-bar {
             position: fixed;
-            top: 10px;
-            right: 10px;
+            top: 20px;
+            right: 20px;
             background-color: black;
             color: white;
-            border-radius: 25px;
-            padding: 10px 20px;
+            border-radius: 50px;
+            padding: 10px 30px;
             display: flex;
-            gap: 15px;
+            gap: 20px;
             z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
 
         .nav-bar a {
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 0.9em;
         }
 
         .nav-bar a:hover {
@@ -56,47 +76,53 @@
 
         /* Sections */
         .section {
-            padding: 20px;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         .section h2 {
-            font-size: 1.8em;
-            margin-bottom: 15px;
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ff6b6b;
+            display: inline-block;
+            padding-bottom: 5px;
         }
 
         .content-box {
             display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
+            flex-direction: column;
+            gap: 20px;
         }
 
         .box {
             background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            padding: 15px;
-            flex: 1 1 calc(33% - 30px);
-            max-width: calc(33% - 30px);
-            text-align: center;
-            transition: transform 0.2s, box-shadow 0.2s;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .box:hover {
             transform: translateY(-5px);
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-            cursor: pointer;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
         }
 
         .box h3 {
             margin: 0;
-            font-size: 1.2em;
-            color: #333;
+            font-size: 1.5em;
+            color: #444;
         }
 
         .box p {
-            margin: 10px 0 0;
-            font-size: 0.9em;
+            margin: 0;
+            font-size: 1em;
             color: #666;
+            line-height: 1.4;
         }
 
         .box a {
@@ -110,16 +136,19 @@
         }
 
         @media (max-width: 768px) {
-            .box {
-                flex: 1 1 calc(50% - 30px);
-                max-width: calc(50% - 30px);
+            .nav-bar {
+                flex-direction: column;
+                align-items: center;
+                padding: 10px 20px;
+                border-radius: 30px;
             }
-        }
 
-        @media (max-width: 480px) {
-            .box {
-                flex: 1 1 100%;
-                max-width: 100%;
+            .nav-bar a {
+                font-size: 1em;
+            }
+
+            .section {
+                padding: 20px;
             }
         }
     </style>
@@ -145,14 +174,14 @@
                 <a href="#">Play Eaglercraft</a>
             </div>
             <div class="box">
-                <h3>Game Title 2</h3>
-                <p>Description of Game 2</p>
-                <a href="#">Play Game 2</a>
+                <h3>1v1.lol</h3>
+                <p>Basic shooter game for web browsers</p>
+                <a href="#">Play 1v1.lol</a>
             </div>
             <div class="box">
-                <h3>Game Title 3</h3>
-                <p>Description of Game 3</p>
-                <a href="#">Play Game 3</a>
+                <h3>Slope</h3>
+                <p>Avoid obstacles</p>
+                <a href="#">Play Slope</a>
             </div>
         </div>
     </section>
@@ -161,19 +190,19 @@
         <h2>Recommended Tools</h2>
         <div class="content-box">
             <div class="box">
-                <h3>Tool Title 1</h3>
-                <p>Description of Tool 1</p>
-                <a href="#">Use Tool 1</a>
+                <h3>ExtHang3r</h3>
+                <p>Temporarily crash managed extensions</p>
+                <a href="#">Use ExtHang3r</a>
             </div>
             <div class="box">
-                <h3>Tool Title 2</h3>
-                <p>Description of Tool 2</p>
-                <a href="#">Use Tool 2</a>
+                <h3>BlobeBlocker</h3>
+                <p>Allows you to go to blocked sites</p>
+                <a href="#">Use BlobeBlocker</a>
             </div>
             <div class="box">
-                <h3>Tool Title 3</h3>
-                <p>Description of Tool 3</p>
-                <a href="#">Use Tool 3</a>
+                <h3>BlobeBM</h3>
+                <p>Run bookmarklets in about:blank</p>
+                <a href="#">Use BlobeBM</a>
             </div>
         </div>
     </section>
