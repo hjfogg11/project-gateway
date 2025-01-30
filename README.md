@@ -1,4 +1,4 @@
 # GameBay
 ##  THIS REPO IS STILL UNDER CONSTRUCTION AND MAY NOT WORK CORRECTLY
 
-This is an unblocked games site with games pulled from [Blobby Boi](https://github.com/Blobby-Boi?tab=repositories)'s repositories. This site also allows you to temporarily kill your school's site blocking extension with ExtHang3r, also made by [Blobby Boi](https://github.com/Blobby-Boi?tab=repositories), among more tools. Credits go to [Blobby Boi](https://github.com/Blobby-Boi?tab=repositories) for making this project possible.
+GameBay is an unblocked games/tools site for students. Most games and tools were pulled from [Blobby Boi](https://github.com/Blobby-Boi)'s Github repositories, a couple have been added from other sources. GameBay might be blocked on your device, so in that case you can open this site on a personal device and use Google Docs, Microsoft Word, etc. to get exploits like ExtHang3r on your managed device. Go to [gamebay.vercel.app](https://gamebay.vercel.app) to play!
